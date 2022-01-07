@@ -5,5 +5,11 @@ version: 1.0.3
 api: 4.0.0
 commands:
   bis:
-    description: タップしたブロックがわかる棒を追加します
+    description: BlockをタップするとIDなどがわかる棒を出します
+    usage: /bis
+    permission: "bis.command"
+
+permissions:
+  bis.command:
+    default: op
 ...
