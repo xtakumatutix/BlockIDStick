@@ -1,7 +1,7 @@
 ---
 name: BlockIDStick
 main: xtakumatutix\blockids\Main
-version: 1.0.3
+version: 1.0.4
 api: 4.0.0
 commands:
   bis:
