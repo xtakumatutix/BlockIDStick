@@ -43,15 +43,13 @@ Class Main extends PluginBase implements Listener
         $item = $event->getItem();
         if ($item->getID() == 280 and $item->getCustomName() == 'BlockIDStick') {
             $block = $event->getBlock();
-            if (!$block->getID() == 0){
-                $id = $block->getId();
-                $meta = $block->getMeta();
-                $blockname = $block->getName();
-                $x = $block->getPosition()->getFloorX();
-                $y = $block->getPosition()->getFloorY();
-                $z = $block->getPosition()->getFloorZ();
-                $player->sendMessage($id.":".$meta." §7(".$blockname.")§f [§c".$x." §a".$y." §b".$z. "§f]");
-            }
+            $id = $block->getId();
+            $meta = $block->getMeta();
+            $blockname = $block->getName();
+            $x = $block->getPosition()->getFloorX();
+            $y = $block->getPosition()->getFloorY();
+            $z = $block->getPosition()->getFloorZ();
+            $player->sendMessage($id.":".$meta." §7(".$blockname.")§f [§c".$x." §a".$y." §b".$z. "§f]");
         }
     }
 }
