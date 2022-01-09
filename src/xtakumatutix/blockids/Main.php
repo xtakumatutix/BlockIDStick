@@ -42,6 +42,7 @@ Class Main extends PluginBase implements Listener
         $player = $event->getPlayer();
         $item = $event->getItem();
         if ($item->getID() == 280 and $item->getCustomName() == 'BlockIDStick') {
+            $event->cancel();
             $block = $event->getBlock();
             $id = $block->getId();
             $meta = $block->getMeta();
